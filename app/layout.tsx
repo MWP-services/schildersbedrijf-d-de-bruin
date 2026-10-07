@@ -1,0 +1,4 @@
+import type { Metadata } from "next";
+import "./globals.css";
+export const metadata: Metadata = {title:{default:"Schilder Gouda | D. de Bruin",template:"%s | D. de Bruin Gouda"},description:"Persoonlijk en vakkundig binnen- en buitenschilderwerk, onderhoud en behangen in Gouda, Reeuwijk en Waddinxveen.",icons:{icon:"/favicon.svg"}};
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="nl"><body><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({"@context":"https://schema.org","@type":"ProfessionalService",name:"Onderhouds- en Schildersbedrijf D. de Bruin",telephone:"+31641507549",email:"dion_de_bruin@hotmail.com",areaServed:["Gouda","Reeuwijk","Waddinxveen"],url:"https://schildersbedrijf-d-de-bruin.micha1846.chatgpt.site"})}}/>{children}</body></html>}
